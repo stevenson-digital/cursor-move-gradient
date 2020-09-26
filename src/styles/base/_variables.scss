@@ -16,10 +16,10 @@ $c-black: #2B2B2B;
 /*  ==================================
   Transitions
 =================================== */
-$t-default-ms: 250ms;
+$t-default-ms: 200ms;
 $t-standard: $t-default-ms linear;
 $t-cubic-bez: cubic-bezier(0.77, 0, 0.175, 1);
-$t-fade-anim: 2s 0s cubic-bezier(.19,1,.22,1) forwards;
+$t-fade-anim: 2000ms 0s cubic-bezier(.19,1,.22,1) forwards;
 
 /*  ==================================
   z-index
