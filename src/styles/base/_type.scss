@@ -21,6 +21,16 @@ body {
   @include scale-property(font-size, 20px, 18px, 16px);
 }
 
+::-moz-selection {
+  background: #ffedbc;
+  color: #ed4264;
+}
+
+::selection {
+  background: #ffedbc;
+  color: #ed4264;
+}
+
 h1,
 h2,
 h3,

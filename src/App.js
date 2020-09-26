@@ -11,6 +11,22 @@ const App = () => {
     return box ? calc : calc + 180
   }
 
+  const adjustRotate = () => {
+    const calc = mouseX / 750
+    return calc
+  }
+
+  const adjustScale = () => {
+    const movement = mouseY / 7500
+    let scale = 0.95 + movement
+
+    if (scale >= 1.05)
+      scale = 1.05
+
+    console.log('scale', scale)
+    return scale
+  }
+
   return (
     <div
       className="App"
@@ -33,7 +49,10 @@ const App = () => {
       </div>
       <div
         className="Box"
-        style={{background: `linear-gradient(${adjustGradient(true)}deg, #ffedbc, #ed4264)`}}
+        style={{
+          background: `linear-gradient(${adjustGradient(true)}deg, #ffedbc, #ed4264)`,
+          transform: `rotate(${adjustRotate()}deg) scale(${adjustScale()})`
+        }}
       />
     </div>
   )

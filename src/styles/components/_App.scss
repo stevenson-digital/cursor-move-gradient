@@ -28,10 +28,11 @@
 }
 
 .Box {
+	box-shadow: none;
 	width: 40vh;
 	height: 50vh;
 	background-color: blue;
 	@include scale-property(margin-left, -11vw, -12vw, -13vw);
 	background: linear-gradient(135deg, #ed4264, #ffedbc);
-	transition: background $t-standard;
+	transition: all $t-standard;
 }
