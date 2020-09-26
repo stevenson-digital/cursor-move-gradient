@@ -1,0 +1,30 @@
+/* ========================================
+  Mixins
+======================================== */
+@mixin scale-property($property, $large, $medium, $small) {
+  #{$property}: #{$large};
+
+  @media (max-width: #{$b-large}) {
+    #{$property}: #{$medium};
+  }
+
+  @media (max-width: #{$b-small}) {
+    #{$property}: #{$small};
+  }
+}
+
+@mixin link-underline() {
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: $c-black;
+    opacity: 1;
+    transition: background-color $t-standard, opacity $t-standard;
+  }
+}
