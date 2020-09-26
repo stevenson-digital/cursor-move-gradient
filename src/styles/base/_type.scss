@@ -12,12 +12,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
+  background-color: red;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $c-white;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.3;
   @include scale-property(font-size, 20px, 18px, 16px);
 }
 
@@ -42,7 +43,7 @@ a {
 .f-vogue-90-42 {
   font-family: 'vogueregular';
   line-height: 1;
-  @include scale-property(font-size, 90px, 56px, 42px);
+  @include scale-property(font-size, 90px, 76px, 58px);
 }
 
 .f-open-38-28 {
