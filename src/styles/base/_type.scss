@@ -9,19 +9,13 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'brownregular';
-  src: url('../../fonts/brown-regular-webfont.woff2') format('woff2'),
-       url('../../fonts/brown-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
-  font-family: $f-body, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $c-black;
+  color: $c-white;
   font-weight: normal;
   line-height: 1.5;
   @include scale-property(font-size, 20px, 18px, 16px);
@@ -36,18 +30,23 @@ p {
   margin: 0;
 }
 
-a:focus {
-  outline: none;
+a {
+  color: $c-white;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.f-vogue-72-42 {
-  font-family: $f-heading;
+.f-vogue-90-42 {
+  font-family: 'vogueregular';
   line-height: 1;
-  @include scale-property(font-size, 72px, 56px, 42px);
+  @include scale-property(font-size, 90px, 56px, 42px);
 }
 
-.f-vogue-26-18 {
-  font-family: $f-heading;
+.f-open-38-28 {
+  font-family: 'Open Sans';
   line-height: 1;
-  @include scale-property(font-size, 26px, 20px, 18px);
+  @include scale-property(font-size, 38px, 32px, 28px);
 }

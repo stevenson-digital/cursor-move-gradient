@@ -10,15 +10,8 @@ $b-xlarge: 1800px;
 /*  ==================================
   Colors
 =================================== */
-$c-black: #282828;
 $c-white: #FFFFFF;
-$c-grey: #a0a0a0;
-
-/*  ==================================
-  Fonts
-=================================== */
-$f-heading: 'vogueregular', serif;
-$f-body: 'brownregular', sans-serif;
+$c-black: #2B2B2B;
 
 /*  ==================================
   Transitions
@@ -31,5 +24,4 @@ $t-fade-anim: 2s 0s cubic-bezier(.19,1,.22,1) forwards;
 /*  ==================================
   z-index
 =================================== */
-$z-mobile-nav: 20;
-$z-nav: 10;
+$z-text: 10;
